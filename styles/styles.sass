@@ -1,5 +1,8 @@
 $mpcGray: #aab0b7
 $padGray: #8d8b8e
+$background: #e7e7e5
+$cream: #e9e0bd
+$akaiRed: #a62e34
 
 *
   box-sizing: border-box
@@ -19,7 +22,7 @@ body
     #MPC
       width: 32rem
       height: 22.4rem
-      background-color: #e7e7e5
+      background-color: $background
       border-radius: 2px
       display: flex
       justify-content: center
@@ -31,15 +34,158 @@ body
         margin-left: 1rem
 
         #logoContainer
-          background-color: red
           width: 14rem
           height: 12%
+          display: flex
+
+          #logoLeft
+            #akai
+              margin: 0
+              font-size: 1.6rem
+              color: $akaiRed
+
+            #prof
+              font-family: 'Kalam', cursive
+              margin: 0
+              font-size: .5rem
+              margin-left: 1.3rem
+              margin-top: -.5rem
+              color: $akaiRed
+
+          #logoRight
+            position: relative
+            left: 2rem
+
+            #mpc2000xl
+              font-family: 'Audiowide', cursive
+              margin: 0
+              font-size: 1rem
+              transform: scale(1, 1.2)
+              position: relative
+              top: .1rem
+
+            #line
+              width: 100%
+              height: 2px
+              background-color: $akaiRed
+
+              &::after
+                content: ''
+                display: block
+                width: 50%
+                height: 2px
+                background-color: #121212
+
+            #midiProductionCenter
+              font-size: .1rem
+              font-family: 'Syne', sans-serif
+              margin: 0
+              margin-left: .2rem
+
 
         #controlsContainer
           background-color: $mpcGray
           width: 14rem
           height: 19%
           margin-top: 2%
+          display: flex
+
+
+          #leftControl
+            display: flex
+            flex-direction: column
+
+            .block
+              width: 4rem
+              height: 1rem
+              background-color: $background
+              margin: .5rem
+              display: flex
+              justify-content: space-around
+
+              .button
+                width: 1.3rem
+                height: .5rem
+                background-color: $cream
+                border: 1px solid #454545
+                position: relative
+                top: .7rem
+                border-radius: 2px
+                display: flex
+                justify-content: center
+
+                &::before
+                  content: ''
+                  display: block
+                  height: 3px
+                  width: 3px
+                  border-radius: 50%
+                  background-color: #121212
+                  position: relative
+                  bottom: .3rem
+
+          #rightControl
+            #knobs
+              display: flex
+              margin: .5rem 0 .6rem 1.7rem
+
+              .knob
+                height: 1.3rem
+                width: 1.3rem
+                border-radius: 50%
+                background-color: $background
+                margin-left: 1rem
+                display: flex
+                justify-content: center
+                align-items: center
+
+                .knob-inside
+                  height: .8rem
+                  width: .8rem
+                  border-radius: 50%
+                  background-color: $akaiRed
+                  display: flex
+                  justify-content: center
+
+                  &::after
+                    content: ''
+                    display: block
+                    height: .5rem
+                    width: .15rem
+                    background-color: $background
+
+                #knob2
+                  background-color: #aaaaaa
+
+            #line
+              border: .5px solid #535353
+              margin-left: .7rem
+
+            #buttons
+              margin-top: -.1rem
+              display: flex
+
+              .button
+                width: 1.3rem
+                height: .5rem
+                background-color: $cream
+                border: 1px solid #454545
+                position: relative
+                top: .7rem
+                border-radius: 2px
+                display: flex
+                justify-content: center
+                margin-left: .7rem
+
+                &::before
+                  content: ''
+                  display: block
+                  height: 3px
+                  width: 3px
+                  border-radius: 50%
+                  background-color: #121212
+                  position: relative
+                  bottom: .3rem
 
         #padsContainer
           background-color: $mpcGray

@@ -29,15 +29,154 @@ body #container #MPC #right {
   margin-left: 1rem;
 }
 body #container #MPC #right #logoContainer {
-  background-color: red;
   width: 14rem;
   height: 12%;
+  display: flex;
+}
+body #container #MPC #right #logoContainer #logoLeft #akai {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #a62e34;
+}
+body #container #MPC #right #logoContainer #logoLeft #prof {
+  font-family: "Kalam", cursive;
+  margin: 0;
+  font-size: 0.5rem;
+  margin-left: 1.3rem;
+  margin-top: -0.5rem;
+  color: #a62e34;
+}
+body #container #MPC #right #logoContainer #logoRight {
+  position: relative;
+  left: 2rem;
+}
+body #container #MPC #right #logoContainer #logoRight #mpc2000xl {
+  font-family: "Audiowide", cursive;
+  margin: 0;
+  font-size: 1rem;
+  transform: scale(1, 1.2);
+  position: relative;
+  top: 0.1rem;
+}
+body #container #MPC #right #logoContainer #logoRight #line {
+  width: 100%;
+  height: 2px;
+  background-color: #a62e34;
+}
+body #container #MPC #right #logoContainer #logoRight #line::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 2px;
+  background-color: #121212;
+}
+body #container #MPC #right #logoContainer #logoRight #midiProductionCenter {
+  font-size: 0.1rem;
+  font-family: "Syne", sans-serif;
+  margin: 0;
+  margin-left: 0.2rem;
 }
 body #container #MPC #right #controlsContainer {
   background-color: #aab0b7;
   width: 14rem;
   height: 19%;
   margin-top: 2%;
+  display: flex;
+}
+body #container #MPC #right #controlsContainer #leftControl {
+  display: flex;
+  flex-direction: column;
+}
+body #container #MPC #right #controlsContainer #leftControl .block {
+  width: 4rem;
+  height: 1rem;
+  background-color: #e7e7e5;
+  margin: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+body #container #MPC #right #controlsContainer #leftControl .block .button {
+  width: 1.3rem;
+  height: 0.5rem;
+  background-color: #e9e0bd;
+  border: 1px solid #454545;
+  position: relative;
+  top: 0.7rem;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+}
+body #container #MPC #right #controlsContainer #leftControl .block .button::before {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
+  background-color: #121212;
+  position: relative;
+  bottom: 0.3rem;
+}
+body #container #MPC #right #controlsContainer #rightControl #knobs {
+  display: flex;
+  margin: 0.5rem 0 0.6rem 1.7rem;
+}
+body #container #MPC #right #controlsContainer #rightControl #knobs .knob {
+  height: 1.3rem;
+  width: 1.3rem;
+  border-radius: 50%;
+  background-color: #e7e7e5;
+  margin-left: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #container #MPC #right #controlsContainer #rightControl #knobs .knob .knob-inside {
+  height: 0.8rem;
+  width: 0.8rem;
+  border-radius: 50%;
+  background-color: #a62e34;
+  display: flex;
+  justify-content: center;
+}
+body #container #MPC #right #controlsContainer #rightControl #knobs .knob .knob-inside::after {
+  content: "";
+  display: block;
+  height: 0.5rem;
+  width: 0.15rem;
+  background-color: #e7e7e5;
+}
+body #container #MPC #right #controlsContainer #rightControl #knobs .knob #knob2 {
+  background-color: #aaaaaa;
+}
+body #container #MPC #right #controlsContainer #rightControl #line {
+  border: 0.5px solid #535353;
+  margin-left: 0.7rem;
+}
+body #container #MPC #right #controlsContainer #rightControl #buttons {
+  margin-top: -0.1rem;
+  display: flex;
+}
+body #container #MPC #right #controlsContainer #rightControl #buttons .button {
+  width: 1.3rem;
+  height: 0.5rem;
+  background-color: #e9e0bd;
+  border: 1px solid #454545;
+  position: relative;
+  top: 0.7rem;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  margin-left: 0.7rem;
+}
+body #container #MPC #right #controlsContainer #rightControl #buttons .button::before {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
+  background-color: #121212;
+  position: relative;
+  bottom: 0.3rem;
 }
 body #container #MPC #right #padsContainer {
   background-color: #aab0b7;
