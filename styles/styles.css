@@ -17,11 +17,12 @@ body #container {
 body #container #MPC {
   width: 32rem;
   height: 22.4rem;
-  background-color: #e7e7e5;
+  background-color: #e6e4d8;
   border-radius: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 body #container #MPC #right {
   width: 14rem;
@@ -77,7 +78,7 @@ body #container #MPC #right #logoContainer #logoRight #midiProductionCenter {
   margin-left: 0.2rem;
 }
 body #container #MPC #right #controlsContainer {
-  background-color: #aab0b7;
+  background-color: #8087a1;
   width: 14rem;
   height: 19%;
   margin-top: 2%;
@@ -90,7 +91,7 @@ body #container #MPC #right #controlsContainer #leftControl {
 body #container #MPC #right #controlsContainer #leftControl .block {
   width: 4rem;
   height: 1rem;
-  background-color: #e7e7e5;
+  background-color: #e6e4d8;
   margin: 0.5rem;
   display: flex;
   justify-content: space-around;
@@ -98,7 +99,7 @@ body #container #MPC #right #controlsContainer #leftControl .block {
 body #container #MPC #right #controlsContainer #leftControl .block .button {
   width: 1.3rem;
   height: 0.5rem;
-  background-color: #e9e0bd;
+  background-color: #f6f5f1;
   border: 1px solid #454545;
   position: relative;
   top: 0.7rem;
@@ -124,7 +125,7 @@ body #container #MPC #right #controlsContainer #rightControl #knobs .knob {
   height: 1.3rem;
   width: 1.3rem;
   border-radius: 50%;
-  background-color: #e7e7e5;
+  background-color: #e6e4d8;
   margin-left: 1rem;
   display: flex;
   justify-content: center;
@@ -143,7 +144,7 @@ body #container #MPC #right #controlsContainer #rightControl #knobs .knob .knob-
   display: block;
   height: 0.5rem;
   width: 0.15rem;
-  background-color: #e7e7e5;
+  background-color: #e6e4d8;
 }
 body #container #MPC #right #controlsContainer #rightControl #knobs .knob #knob2 {
   background-color: #aaaaaa;
@@ -159,7 +160,7 @@ body #container #MPC #right #controlsContainer #rightControl #buttons {
 body #container #MPC #right #controlsContainer #rightControl #buttons .button {
   width: 1.3rem;
   height: 0.5rem;
-  background-color: #e9e0bd;
+  background-color: #f6f5f1;
   border: 1px solid #454545;
   position: relative;
   top: 0.7rem;
@@ -179,7 +180,7 @@ body #container #MPC #right #controlsContainer #rightControl #buttons .button::b
   bottom: 0.3rem;
 }
 body #container #MPC #right #padsContainer {
-  background-color: #aab0b7;
+  background-color: #8087a1;
   width: 14rem;
   height: 65%;
   margin-top: 2%;
@@ -190,15 +191,339 @@ body #container #MPC #right #padsContainer {
 body #container #MPC #right #padsContainer .pad-row .pads {
   width: 2.7rem;
   height: 2.7rem;
-  background-color: #8d8b8e;
+  background-color: #544b46;
   margin: 0.4rem 0.2rem;
   box-shadow: -2px 2px 2px #121212;
+}
+body #container #MPC #right #padsContainer .pad-row .pads p {
+  font-family: "Unica One", cursive;
+  margin: 0;
+  color: #f6f5f1;
 }
 body #container #MPC #left {
   width: 14rem;
   height: 20rem;
-  background-color: #e98113;
   margin-right: 1rem;
+}
+body #container #MPC #left #top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body #container #MPC #left #top #display {
+  width: 9rem;
+  height: 3rem;
+  background-color: #2b3347;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body #container #MPC #left #top #display #window {
+  width: 6.5rem;
+  height: 2rem;
+  background-color: #555b5e;
+}
+body #container #MPC #left #top #display #window::before {
+  content: "";
+  display: block;
+  border: 0.5px solid #fefefe;
+  position: relative;
+  bottom: 0.2rem;
+}
+body #container #MPC #left #top #display #squares {
+  width: 6.5rem;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1px;
+}
+body #container #MPC #left #top #display #squares .square {
+  height: 2px;
+  width: 2px;
+  background-color: #fefefe;
+}
+body #container #MPC #left #top #buttons {
+  display: flex;
+  width: 6.5rem;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+body #container #MPC #left #top #buttons .button {
+  width: 0.7rem;
+  height: 0.3rem;
+  background-color: #f6f5f1;
+  border: 1px solid #454545;
+  border-radius: 1px;
+}
+body #container #MPC #left #middle {
+  display: flex;
+  margin: 1rem 0 0 0;
+}
+body #container #MPC #left #middle #midLeft {
+  width: 50%;
+}
+body #container #MPC #left #middle #midLeft #leftButtons .button-row {
+  display: flex;
+  justify-content: center;
+}
+body #container #MPC #left #middle #midLeft #leftButtons .button-row .button {
+  width: 0.7rem;
+  height: 0.3rem;
+  background-color: #1e3963;
+  border: 1px solid #454545;
+  border-radius: 1px;
+  margin: 0.6rem 0 0 0.8rem;
+}
+body #container #MPC #left #middle #midLeft #leftButtons .button-row .whiteButton {
+  background-color: #f6f5f1;
+}
+body #container #MPC #left #middle #midLeft #leftButtons .button-row .whiteButton #wbBackground {
+  height: 0.7rem;
+  width: 1rem;
+  background-color: #8087a1;
+  position: relative;
+  z-index: -100;
+  bottom: 0.25rem;
+  right: 0.2rem;
+}
+body #container #MPC #left #middle #midRight {
+  width: 50%;
+}
+body #container #MPC #left #middle #midRight #twoButtonContainer {
+  display: flex;
+  justify-content: space-around;
+}
+body #container #MPC #left #middle #midRight #twoButtonContainer .button {
+  width: 1.3rem;
+  height: 0.5rem;
+  background-color: #f6f5f1;
+  border: 1px solid #454545;
+  border-radius: 2px;
+  margin-top: 0.4rem;
+}
+body #container #MPC #left #middle #midRight #twoButtonContainer .orange {
+  background-color: #ea7f3b;
+}
+body #container #MPC #left #middle #midRight #dialContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+body #container #MPC #left #middle #midRight #dialContainer #dial {
+  width: 3.7rem;
+  height: 3.7rem;
+  background-color: #212121;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #container #MPC #left #middle #midRight #dialContainer #dial #insideDial {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 2px #464646 solid;
+  border-radius: 50%;
+}
+body #container #MPC #left #middle #midRight #dialContainer #dial #insideDial::after {
+  content: "";
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  border: 2px #464646 solid;
+  border-radius: 50%;
+  position: relative;
+  bottom: 0.6rem;
+  left: 0.5rem;
+  background-color: #212121;
+}
+body #container #MPC #left #bottom {
+  display: flex;
+}
+body #container #MPC #left #bottom #bottomLeft {
+  width: 3rem;
+  height: 9rem;
+  border: 1px solid #202020;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body #container #MPC #left #bottom #bottomLeft #linesContainer {
+  position: absolute;
+  bottom: 1.5rem;
+  z-index: -100;
+  height: 5rem;
+}
+body #container #MPC #left #bottom #bottomLeft #linesContainer .line {
+  width: 2rem;
+  background-color: #adadad;
+  height: 0.1rem;
+  margin-top: 0.3rem;
+}
+body #container #MPC #left #bottom #bottomLeft #button {
+  width: 1.3rem;
+  height: 0.5rem;
+  background-color: #f6f5f1;
+  border: 1px solid #454545;
+  border-radius: 1px;
+  margin-top: 1rem;
+}
+body #container #MPC #left #bottom #bottomLeft #button::before {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
+  background-color: #121212;
+  position: relative;
+  bottom: 0.4rem;
+  left: 0.5rem;
+}
+body #container #MPC #left #bottom #bottomLeft #slider {
+  height: 5rem;
+  width: 0.3rem;
+  background-color: #121212;
+  margin-top: 1.8rem;
+  display: flex;
+  justify-content: center;
+}
+body #container #MPC #left #bottom #bottomLeft #slider::after {
+  content: "";
+  display: block;
+  height: 5rem;
+  width: 0.7rem;
+  background-color: #e6e4d8;
+  position: absolute;
+  z-index: -100;
+}
+body #container #MPC #left #bottom #bottomLeft #slider #knob {
+  width: 1.9rem;
+  height: 0.8rem;
+  background-color: #919191;
+  position: absolute;
+  z-index: 200;
+  margin-top: 1rem;
+  border-radius: 1px;
+  display: flex;
+  align-items: center;
+}
+body #container #MPC #left #bottom #bottomLeft #slider #knob::after {
+  content: "";
+  display: block;
+  width: 1.9rem;
+  height: 0.2rem;
+  background-color: #1e3963;
+}
+body #container #MPC #left #bottom #bottomRight {
+  width: 100%;
+  margin-top: 0.8rem;
+  position: relative;
+  left: 0.5rem;
+}
+body #container #MPC #left #bottom #bottomRight #RightTop {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+body #container #MPC #left #bottom #bottomRight #RightTop #leftSide #largeButton {
+  width: 1.5rem;
+  height: 1rem;
+  background-color: #f6f5f1;
+  border-radius: 2px;
+  border: 1px solid #454545;
+}
+body #container #MPC #left #bottom #bottomRight #RightTop #leftSide #twoButtonContainer2 {
+  display: flex;
+  position: relative;
+  top: 1rem;
+  right: 2rem;
+}
+body #container #MPC #left #bottom #bottomRight #RightTop #leftSide #twoButtonContainer2 .button {
+  width: 1.3rem;
+  height: 0.5rem;
+  background-color: #f6f5f1;
+  border: 1px solid #454545;
+  border-radius: 1px;
+  margin-left: 1rem;
+}
+body #container #MPC #left #bottom #bottomRight #RightTop #rightSide #selector {
+  width: 2.8rem;
+  height: 1.9rem;
+  background-color: #121212;
+  position: relative;
+  top: 0.5rem;
+  right: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 2px;
+}
+body #container #MPC #left #bottom #bottomRight #RightTop #rightSide #selector .left--selector {
+  width: 0.8rem;
+  background-color: #f6f5f1;
+  clip-path: polygon(4% 4%, 75% 4%, 100% 50%, 75% 96%, 4% 96%);
+  position: relative;
+  left: 1px;
+}
+body #container #MPC #left #bottom #bottomRight #RightTop #rightSide #selector #middleSelector {
+  position: absolute;
+  left: 0.7rem;
+}
+body #container #MPC #left #bottom #bottomRight #RightTop #rightSide #selector #middleSelector .top--selector {
+  height: 0.95rem;
+  width: 1.5rem;
+  background-color: #f6f5f1;
+  clip-path: polygon(0% 8%, 100% 8%, 85% 98%, 15% 98%);
+}
+body #container #MPC #left #bottom #bottomRight #RightTop #rightSide #selector #middleSelector .bottom--selector {
+  height: 0.95rem;
+  width: 1.5rem;
+  background-color: #f6f5f1;
+  clip-path: polygon(15% 2%, 85% 2%, 100% 92%, 0% 92%);
+}
+body #container #MPC #left #bottom #bottomRight #RightTop #rightSide #selector .right--selector {
+  width: 0.8rem;
+  background-color: #f6f5f1;
+  clip-path: polygon(4% 4%, 60% 4%, 90% 50%, 60% 96%, 4% 96%);
+  transform: rotate(180deg);
+  position: relative;
+  right: 1px;
+}
+body #container #MPC #left #bottom #bottomRight #RightBottom #locateLine {
+  width: 8rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  background-color: #5c5c5c;
+  margin-bottom: 1rem;
+}
+body #container #MPC #left #bottom #bottomRight #RightBottom #fiveButtonRowTop {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 0.35rem;
+}
+body #container #MPC #left #bottom #bottomRight #RightBottom #fiveButtonRowTop .button {
+  width: 1.3rem;
+  height: 0.5rem;
+  background-color: #f6f5f1;
+  border: 1px solid #454545;
+  border-radius: 2px;
+}
+body #container #MPC #left #bottom #bottomRight #RightBottom #fiveButtonRowBottom {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 0.35rem;
+  margin-top: 1rem;
+}
+body #container #MPC #left #bottom #bottomRight #RightBottom #fiveButtonRowBottom .theLastButtonsThankGoodness {
+  width: 1.3rem;
+  height: 0.9rem;
+  background-color: #f6f5f1;
+  border: 1px solid #454545;
+  border-radius: 2px;
+}
+body #container #MPC #left #bottom #bottomRight #RightBottom #fiveButtonRowBottom .makeTheseRed {
+  background-color: #a62e34;
 }
 
 /*# sourceMappingURL=styles.css.map */

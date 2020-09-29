@@ -1,8 +1,11 @@
-$mpcGray: #aab0b7
-$padGray: #8d8b8e
-$background: #e7e7e5
-$cream: #e9e0bd
+$mpcGray: #8087a1
+$padGray: #544b46
+$background: #e6e4d8
+$cream: #f6f5f1
 $akaiRed: #a62e34
+$display: #2b3347
+$window: #555b5e
+$buttonBlue: #1e3963
 
 *
   box-sizing: border-box
@@ -27,6 +30,7 @@ body
       display: flex
       justify-content: center
       align-items: center
+      position: relative
 
       #right
         width: 14rem
@@ -204,8 +208,342 @@ body
               margin: .4rem .2rem
               box-shadow: -2px 2px 2px #121212
 
+              p
+                font-family: 'Unica One', cursive
+                margin: 0
+                color: $cream
+
+
       #left
         width: 14rem
         height: 20rem
-        background-color: rgb(233, 129, 19)
         margin-right: 1rem
+
+        #top
+          display: flex
+          flex-direction: column
+          align-items: center
+
+          #display
+            width: 9rem
+            height: 3rem
+            background-color: $display
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+
+            #window
+              width: 6.5rem
+              height: 2rem
+              background-color: $window
+
+              &::before
+                content: ''
+                display: block
+                border: .5px solid #fefefe
+                position: relative
+                bottom: .2rem
+
+            #squares
+              width: 6.5rem
+              display: flex
+              justify-content: space-around
+              margin-top: 1px
+
+              .square
+                height: 2px
+                width: 2px
+                background-color: #fefefe
+
+          #buttons
+            display: flex
+            width: 6.5rem
+            justify-content: space-between
+            margin-top: 1rem
+
+            .button
+              width: .7rem
+              height: .3rem
+              background-color: $cream
+              border: 1px solid #454545
+              border-radius: 1px
+
+        #middle
+          display: flex
+          margin: 1rem 0 0 0
+
+          #midLeft
+            width: 50%
+
+            #leftButtons
+              .button-row
+                display: flex
+                justify-content: center
+
+                .button
+                  width: .7rem
+                  height: .3rem
+                  background-color: $buttonBlue
+                  border: 1px solid #454545
+                  border-radius: 1px
+                  margin: .6rem 0 0 .8rem
+
+                .whiteButton
+                  background-color: $cream
+
+
+                  #wbBackground
+                    height: .7rem
+                    width: 1rem
+                    background-color: $mpcGray
+                    position: relative
+                    z-index: -100
+                    bottom: .25rem
+                    right: .2rem
+
+          #midRight
+            width: 50%
+
+            #twoButtonContainer
+              display: flex
+              justify-content: space-around
+
+              .button
+                width: 1.3rem
+                height: .5rem
+                background-color: $cream
+                border: 1px solid #454545
+                border-radius: 2px
+                margin-top: .4rem
+
+              .orange
+                background-color: #ea7f3b
+
+            #dialContainer
+              display: flex
+              justify-content: center
+              margin-top: 1rem
+
+              #dial
+                width: 3.7rem
+                height: 3.7rem
+                background-color: #212121
+                border-radius: 50%
+                display: flex
+                justify-content: center
+
+                align-items: center
+
+                #insideDial
+                  width: 2.5rem
+                  height: 2.5rem
+                  border: 2px #464646 solid
+                  border-radius: 50%
+
+                  &::after
+                    content: ''
+                    display: block
+                    width: 1rem
+                    height: 1rem
+                    border: 2px #464646 solid
+                    border-radius: 50%
+                    position: relative
+                    bottom: .6rem
+                    left: .5rem
+                    background-color: #212121
+
+        #bottom
+          display: flex
+
+          #bottomLeft
+            width: 3rem
+            height: 9rem
+            border: 1px solid #202020
+            margin-left: 1rem
+            display: flex
+            flex-direction: column
+            align-items: center
+
+            #linesContainer
+              position: absolute
+              bottom: 1.5rem
+              z-index: -100
+              height: 5rem
+
+              .line
+                width: 2rem
+                background-color: #adadad
+                height: .1rem
+                margin-top: .3rem
+
+            #button
+              width: 1.3rem
+              height: .5rem
+              background-color: $cream
+              border: 1px solid #454545
+              border-radius: 1px
+              margin-top: 1rem
+
+              &::before
+                content: ''
+                display: block
+                height: 3px
+                width: 3px
+                border-radius: 50%
+                background-color: #121212
+                position: relative
+                bottom: .4rem
+                left: .5rem
+
+            #slider
+              height: 5rem
+              width: .3rem
+              background-color: #121212
+              margin-top: 1.8rem
+              display: flex
+              justify-content: center
+
+              &::after
+                content: ''
+                display: block
+                height: 5rem
+                width: .7rem
+                background-color: $background
+                position: absolute
+                z-index: -100
+
+              #knob
+                width: 1.9rem
+                height: .8rem
+                background-color: #919191
+                position: absolute
+                z-index: 200
+                margin-top: 1rem
+                border-radius: 1px
+                display: flex
+                align-items: center
+
+                &::after
+                  content: ''
+                  display: block
+                  width: 1.9rem
+                  height: .2rem
+                  background-color: $buttonBlue
+
+          #bottomRight
+            width: 100%
+            margin-top: .8rem
+            position: relative
+            left: .5rem
+
+            #RightTop
+              width: 100%
+              display: flex
+              justify-content: center
+
+              #leftSide
+
+                #largeButton
+                  width: 1.5rem
+                  height: 1rem
+                  background-color: $cream
+                  border-radius: 2px
+                  border: 1px solid #454545
+
+                #twoButtonContainer2
+                  display: flex
+                  position: relative
+                  top: 1rem
+                  right: 2rem
+
+                  .button
+                    width: 1.3rem
+                    height: .5rem
+                    background-color: $cream
+                    border: 1px solid #454545
+                    border-radius: 1px
+                    margin-left: 1rem
+
+              #rightSide
+                #selector
+                  width: 2.8rem
+                  height: 1.9rem
+                  background-color: #121212
+                  position: relative
+                  top: .5rem
+                  right: .5rem
+                  display: flex
+                  justify-content: space-between
+                  border-radius: 2px
+
+                  .left--selector
+                    width: .8rem
+                    background-color: $cream
+                    clip-path: polygon(4% 4%, 75% 4%, 100% 50%, 75% 96%, 4% 96%)
+                    position: relative
+                    left: 1px
+
+                  #middleSelector
+                    position: absolute
+                    left: .7rem
+
+                    .top--selector
+                      height: .95rem
+                      width: 1.5rem
+                      background-color: $cream
+                      clip-path: polygon(0% 8%, 100% 8%, 85% 98%, 15% 98%)
+
+                    .bottom--selector
+                      height: .95rem
+                      width: 1.5rem
+                      background-color: $cream
+                      clip-path: polygon(15% 2%, 85% 2%, 100% 92%, 0% 92%)
+
+                  .right--selector
+                    width: .8rem
+                    background-color: $cream
+                    clip-path: polygon(4% 4%, 60% 4%, 90% 50%, 60% 96%, 4% 96%)
+                    transform: rotate(180deg)
+                    position: relative
+                    right: 1px
+
+
+            #RightBottom
+
+              #locateLine
+                width: 8rem
+                margin-top: 2rem
+                margin-right: 2rem
+                background-color: #5c5c5c
+                margin-bottom: 1rem
+
+              #fiveButtonRowTop
+                width: 80%
+                display: flex
+                justify-content: space-around
+                margin-left: .35rem
+
+                .button
+                  width: 1.3rem
+                  height: .5rem
+                  background-color: $cream
+                  border: 1px solid #454545
+                  border-radius: 2px
+
+              #fiveButtonRowBottom
+                width: 80%
+                display: flex
+                justify-content: space-around
+                margin-left: .35rem
+                margin-top: 1rem
+
+                .theLastButtonsThankGoodness
+                  width: 1.3rem
+                  height: .9rem
+                  background-color: $cream
+                  border: 1px solid #454545
+                  border-radius: 2px
+
+                .makeTheseRed
+                  background-color: $akaiRed

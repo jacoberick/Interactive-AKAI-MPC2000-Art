@@ -16,11 +16,136 @@
       href="https://fonts.googleapis.com/css2?family=Syne&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts.js" async></script>
+    <link rel="icon" src="favicon.ico" />
   </head>
   <body>
     <div id="container">
       <div id="MPC">
-        <div id="left"></div>
+        <div id="left">
+          <div id="top">
+            <div id="display">
+              <div id="window"></div>
+              <div id="squares">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+              </div>
+            </div>
+            <div id="buttons">
+              <div class="button"></div>
+              <div class="button"></div>
+              <div class="button"></div>
+              <div class="button"></div>
+              <div class="button"></div>
+              <div class="button"></div>
+            </div>
+          </div>
+          <div id="middle">
+            <div id="midLeft">
+              <div id="leftButtons">
+                <div class="button-row">
+                  <div class="button"></div>
+                  <div class="button"></div>
+                  <div class="button"></div>
+                </div>
+                <div class="button-row">
+                  <div class="button"></div>
+                  <div class="button"></div>
+                  <div class="button"></div>
+                </div>
+                <div class="button-row">
+                  <div class="button"></div>
+                  <div class="button"></div>
+                  <div class="button"></div>
+                </div>
+                <div class="button-row">
+                  <div class="button whiteButton">
+                    <div id="wbBackground"></div>
+                  </div>
+                  <div class="button"></div>
+                  <div class="button whiteButton"></div>
+                </div>
+              </div>
+            </div>
+            <div id="midRight">
+              <div id="twoButtonContainer">
+                <div class="button"></div>
+                <div class="button orange"></div>
+              </div>
+              <div id="dialContainer">
+                <div id="dial">
+                  <div id="insideDial"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="bottom">
+            <div id="bottomLeft">
+              <div id="linesContainer">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </div>
+              <div id="button"></div>
+              <div id="slider"><div id="knob"></div></div>
+            </div>
+            <div id="bottomRight">
+              <div id="RightTop">
+                <div id="leftSide">
+                  <div id="largeButton"></div>
+                  <div id="twoButtonContainer2">
+                    <div class="button"></div>
+                    <div class="button"></div>
+                  </div>
+                </div>
+                <div id="rightSide">
+                  <div id="selector">
+                    <div class="left--selector"></div>
+                    <div id="middleSelector">
+                      <div class="top--selector"></div>
+                      <div class="bottom--selector"></div>
+                    </div>
+                    <div class="right--selector"></div>
+                  </div>
+                </div>
+              </div>
+              <div id="RightBottom">
+                <hr id="locateLine" />
+                <div id="fiveButtonRowTop">
+                  <div class="button"></div>
+                  <div class="button"></div>
+                  <div class="button"></div>
+                  <div class="button"></div>
+                  <div class="button"></div>
+                </div>
+                <div id="fiveButtonLines"></div>
+                <div id="fiveButtonRowBottom">
+                  <div class="theLastButtonsThankGoodness makeTheseRed"></div>
+                  <div class="theLastButtonsThankGoodness makeTheseRed"></div>
+                  <div class="theLastButtonsThankGoodness"></div>
+                  <div class="theLastButtonsThankGoodness"></div>
+                  <div class="theLastButtonsThankGoodness"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div id="right">
           <div id="logoContainer">
             <div id="logoLeft">
@@ -62,28 +187,108 @@
           </div>
           <div id="padsContainer">
             <div class="pad-row">
-              <div class="pads"></div>
-              <div class="pads"></div>
-              <div class="pads"></div>
-              <div class="pads"></div>
+              <div class="pads 4" id="sfx">
+                <p>
+                  4
+                </p>
+                <audio src="drumSounds/SFX.WAV"></audio>
+              </div>
+              <div class="pads r" id="raka">
+                <p>
+                  R
+                </p>
+                <audio src="drumSounds/RAKA.WAV"></audio>
+              </div>
+              <div class="pads f" id="ohat">
+                <p>
+                  F
+                </p>
+                <audio src="drumSounds/OHAT.WAV"></audio>
+              </div>
+              <div class="pads v" id="kick">
+                <p>
+                  V
+                </p>
+                <audio src="drumSounds/KICK.WAV"></audio>
+              </div>
             </div>
             <div class="pad-row">
-              <div class="pads"></div>
-              <div class="pads"></div>
-              <div class="pads"></div>
-              <div class="pads"></div>
+              <div class="pads 5" id="sfx2">
+                <p>
+                  5
+                </p>
+                <audio src="drumSounds/SFX2.WAV"></audio>
+              </div>
+              <div class="pads t" id="stone">
+                <p>
+                  T
+                </p>
+                <audio src="drumSounds/STONE.wav"></audio>
+              </div>
+              <div class="pads g" id="cowbell">
+                <p>
+                  G
+                </p>
+                <audio src="drumSounds/COWBELL.wav"></audio>
+              </div>
+              <div class="pads b" id="snare">
+                <p>
+                  B
+                </p>
+                <audio src="drumSounds/SNARE.WAV"></audio>
+              </div>
             </div>
             <div class="pad-row">
-              <div class="pads"></div>
-              <div class="pads"></div>
-              <div class="pads"></div>
-              <div class="pads"></div>
+              <div class="pads 6" id="sfx3">
+                <p>
+                  6
+                </p>
+                <audio src="drumSounds/SFX3.WAV"></audio>
+              </div>
+              <div class="pads y" id="tsh">
+                <p>
+                  Y
+                </p>
+                <audio src="drumSounds/TSH.WAV"></audio>
+              </div>
+              <div class="pads h" id="cap">
+                <p>
+                  H
+                </p>
+                <audio src="drumSounds/CAP.WAV"></audio>
+              </div>
+              <div class="pads n" id="hat">
+                <p>
+                  N
+                </p>
+                <audio src="drumSounds/HAT.WAV"></audio>
+              </div>
             </div>
             <div class="pad-row">
-              <div class="pads"></div>
-              <div class="pads"></div>
-              <div class="pads"></div>
-              <div class="pads"></div>
+              <div class="pads 7" id="sfx4">
+                <p>
+                  7
+                </p>
+                <audio src="drumSounds/SFX4.WAV"></audio>
+              </div>
+              <div class="pads u" id="woo">
+                <p>
+                  U
+                </p>
+                <audio src="drumSounds/WOO.wav"></audio>
+              </div>
+              <div class="pads j" id="bada">
+                <p>
+                  J
+                </p>
+                <audio src="drumSounds/BADA.wav"></audio>
+              </div>
+              <div class="pads m" id="hat2">
+                <p>
+                  M
+                </p>
+                <audio src="drumSounds/HAT2.WAV"></audio>
+              </div>
             </div>
           </div>
         </div>
